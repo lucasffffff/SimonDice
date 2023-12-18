@@ -26,16 +26,14 @@ Dispositivo Android o emulador con Android 7.0 (Nougat) o superior.
 
 ## Diagrama de Flujo
 
-```mermaid
-graph TD
-    A[MainActivity] -->|Iniciar SimonDiceActivity| B[SimonDiceActivity]
-    B -->|Usuario inicia juego| C[Iniciar nuevo juego]
-    C -->|Generar patrón aleatorio| D[Mostrar patrón en la UI]
-    B -->|Usuario selecciona colores| E[Verificar entrada del jugador]
-    E -->|Si la entrada es correcta| F[¿Jugador completó la secuencia?]
-    F -->|Generar próximo número| G[Mostrar nuevo patrón en la UI]
-    G -->|Fin del juego| H[¿Juego terminado?]
-    H -->|Mostrar mensaje de juego terminado| I[Fin del juego]
-    E -->|Si la entrada es incorrecta| I[Mostrar mensaje de juego terminado]
-    I -->|Fin del juego| J[Usuario reinicia juego]
-    J -->|Fin| K[Fin]
+digraph G {
+    Inicio [shape=ellipse, label="Inicio"]
+    "Generar Secuencia" -> "Mostrar Secuencia"
+    "Mostrar Secuencia" -> "Esperar Entrada"
+    "Esperar Entrada" -> "Verificar Entrada"
+    "Verificar Entrada" -> "Correcto" [label="Sí"]
+    "Verificar Entrada" -> "Incorrecto" [label="No"]
+    "Correcto" -> "Generar Secuencia"
+    "Incorrecto" -> "Fin" [label="Reiniciar"]
+    "Fin" [shape=ellipse, label="Fin"]
+}

@@ -40,5 +40,8 @@ graph TD
     I -->|Fin del juego| J[Usuario reinicia juego]
     J -->|Fin| K[Fin]
 
+![Captura de pantalla 2023-12-18 211059](https://github.com/lucasffffff/SimonDice/assets/114582569/86187ca3-1237-4a55-87cc-60545bed26fc)
+
+
 
 

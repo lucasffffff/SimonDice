@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Botones de colores -->
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Rojo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnGreen"
+        android:layout_marginBottom="16dp"
+        android:background="#FF0000" />
+
+    <Button
+        android:id="@+id/btnGreen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Verde"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnBlue"
+        android:layout_marginBottom="16dp"
+        android:background="#00FF00" />
+
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Azul"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnYellow"
+        android:layout_marginBottom="16dp"
+        android:background="#0000FF" />
+
+    <Button
+        android:id="@+id/btnYellow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Amarillo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFF00" />
+
+    <!-- Botón de reinicio -->
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Juego"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnYellow"
+        android:layout_marginTop="16dp" />
+
+    <!-- Puedes agregar más elementos, como una vista para mostrar la secuencia, aquí -->
+
+</RelativeLayout>

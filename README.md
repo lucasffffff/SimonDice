@@ -26,6 +26,8 @@ Dispositivo Android o emulador con Android 7.0 (Nougat) o superior.
 
 ## Diagrama de Flujo
 
+![Captura de pantalla 2023-12-18 211059](https://github.com/lucasffffff/SimonDice/assets/114582569/86187ca3-1237-4a55-87cc-60545bed26fc)
+
 ```mermaid
 graph TD
     A[MainActivity] -->|Iniciar SimonDiceActivity| B[SimonDiceActivity]
@@ -40,7 +42,7 @@ graph TD
     I -->|Fin del juego| J[Usuario reinicia juego]
     J -->|Fin| K[Fin]
 
-![Captura de pantalla 2023-12-18 211059](https://github.com/lucasffffff/SimonDice/assets/114582569/86187ca3-1237-4a55-87cc-60545bed26fc)
+
 
 
 
